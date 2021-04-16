@@ -1,0 +1,7 @@
+language: csharp
+solution: SwaggerAndAutorestExample.sln
+
+install:
+  - nuget restore SwaggerAndAutorestExample.sln
+script:
+  - msbuild /p:Configuration=Release SwaggerAndAutorestExample.sln
